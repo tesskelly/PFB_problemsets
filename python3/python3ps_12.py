@@ -5,3 +5,6 @@ sub_dna = dna[99:200]
 at_content = ((sub_dna.count('a')+sub_dna.count('t'))/len(sub_dna))*100
 gc_content = ((sub_dna.count('g')+sub_dna.count('c'))/len(sub_dna))*100
 print(f' The AT content of this sequence is {at_content:.2f} and the GC content of this sequence is {gc_content:.2f}')
+
+#the correct answer is 65.35%
+#the code works yayyy!
