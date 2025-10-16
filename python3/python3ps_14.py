@@ -6,3 +6,10 @@ print(f' startpos:{dna.find("GAATTC")+1} endpos:{dna.find("GAATTC")+6}')
 
 #the final answer is startpos:396 and endpos:401
 #the code works yayyy!!
+
+#part 2... Now find the EcoRI siet on the opposite strand. What do you need to do to the sequence to generate the opposite strand? 
+dna = dna.replace('A','t').replace('T','a').replace('C','g').replace('G','c')
+dna_rev = dna[::-1]
+print(f' startpos:{dna_rev.find("gaattc")+1} endpos:{dna_rev.find("gaattc")+6}')
+
+#the correct answer is startpos: 442 and endpos: 447
