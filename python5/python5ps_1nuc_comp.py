@@ -36,6 +36,8 @@ print(nt_count)
 gc_content = ((seq.count('G') + seq.count('C'))/len(seq)*100)
 print(f'{gc_content:.2f}')
 
+#the code works yay!!!
+
 
 
 
