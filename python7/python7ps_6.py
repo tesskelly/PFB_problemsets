@@ -6,9 +6,9 @@
 # 5. It just indicates where the cut is happening.)
 
 import re
-with open ('Python_07_ApoI.fasta','r') as python_07_ApoI_fasta_file:
+with open ('Python_07_ApoI.fasta.txt','r') as python_07_ApoI_fasta_file:
     for line in python_07_ApoI_fasta_file: 
         line = line.strip()
-        for found in re.findall(r'(A)AATT(G))', line):
-            print(line)
+        for found in re.findall(r'([AG]AATT[CT])', line):
+            print(found)
 
