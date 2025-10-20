@@ -6,7 +6,7 @@ dna = 'CGTGCTTTCCACGACGGTGACACGCTTCCCTGGA'
 c_count = dna.count('C')
 g_count = dna.count ('G')
 dna_len = len(dna)
-gc_content = (c_count + g_count)/dna_len
+gc_content = ((c_count + g_count)/dna_len)
 print(gc_content)
 
 
