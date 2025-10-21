@@ -56,3 +56,5 @@ if __name__ == '__main__':
         sys.exit(1)
     fasta_path = sys.argv[1]
     main(fasta_path)
+
+# the code works, thank you Chat GPT!! 
