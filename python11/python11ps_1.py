@@ -16,10 +16,16 @@ class DNARecord(object):
         return at_content 
     def get_sequence_length(self):
         return len(self.sequence)
+    def get_fasta_format(self):
+        return f'>{self.gene_name} {self.species_name}\n{self.sequence}'
 # create a new DNArecord object with user defined data
 dna_rec_obj_1 = DNARecord('ACTGATCGTTACGTACGAGT','ABC1', 'Drosophila melanogaster')
 dna_rec_obj_2 = DNARecord('ATATATTATTATATTATA','COX1','Homo sapiens')
 
 for d in [dna_rec_obj_1, dna_rec_obj_2]:
-    print('name:' ,d.gene_name,' ','seq:',d.sequence ,"sequence length:", d.get_sequence_length(), "species name:", d.species_name, "AT_content:" , f"{d.get_AT() * 100:.2f}%")
+    #print('name:' ,d.gene_name,' ','seq:',d.sequence ,"sequence length:", d.get_sequence_length(), "species name:", d.species_name, "AT_content:" , f"{d.get_AT() * 100:.2f}%")
+    print(d.get_fasta_format())
+    print(f'AT Content: {d.get_AT() * 100:.2f}%')
+    print(f'Sequence Length:{d.get_sequence_length()}')
+    
 #the code works, thank you chat GPT!
