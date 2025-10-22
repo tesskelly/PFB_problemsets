@@ -21,3 +21,4 @@ def dna_sequence(dna):
 
 dna_sequence_return = dna_sequence(dna_string)
 print(dna_sequence_return)
+#the code works, yay!
