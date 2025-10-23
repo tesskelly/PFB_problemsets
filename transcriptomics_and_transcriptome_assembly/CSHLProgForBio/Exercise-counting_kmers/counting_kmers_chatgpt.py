@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import sys
 import argparse
 from collections import defaultdict, Counter
