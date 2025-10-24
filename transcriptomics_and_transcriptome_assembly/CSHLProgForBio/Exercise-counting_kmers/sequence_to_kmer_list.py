@@ -69,7 +69,7 @@ def main():
 
     kmers  = sequence_to_kmer_list(sequence, kmer_length)
 
-    print(kmers)
+    #print(kmers)
 
     sys.exit(0)  # always good practice to indicate worked ok!
 
